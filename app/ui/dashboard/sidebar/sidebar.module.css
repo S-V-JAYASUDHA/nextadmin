@@ -1,0 +1,63 @@
+.container {
+    position: sticky;
+    top: 40px;
+    width: 250px; /* Adjust width as needed */
+    padding: 10px; 
+    height: 700px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.userImage {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userDetail {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: 500;
+}
+
+.userTitle {
+    font-size: 12px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list > li {
+    margin-bottom: 20px; /* Add margin between categories */
+}
+
+.cat {
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.subList {
+    list-style: none;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.subList > li {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
