@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import MenuLink from './menuLink/menuLink';
 import styles from './sidebar.module.css';
@@ -8,7 +7,9 @@ import {
     MdShoppingBag,
     MdSettings,
     MdHelpCenter,
+    MdLogout,
 } from 'react-icons/md';
+import { FaShoppingCart } from 'react-icons/fa'; // Assuming you're using FontAwesome for Order icon
 
 const menuItems = [
     {
@@ -29,6 +30,11 @@ const menuItems = [
                 path: '/dashboard/products',
                 icon: <MdShoppingBag />,
             },
+            {
+                title: 'Order',
+                path: '/dashboard/orders',
+                icon: <FaShoppingCart />,
+            },
         ],
     },
     {
@@ -44,6 +50,7 @@ const menuItems = [
                 path: '/dashboard/help',
                 icon: <MdHelpCenter />,
             },
+            
         ],
     },
 ];
@@ -72,6 +79,9 @@ const Sidebar = () => {
                     </li>
                 ))}
             </ul>
+            <button className={styles.logout}>
+                <MdLogout/>
+                Logout</button>
         </div>
     );
 };

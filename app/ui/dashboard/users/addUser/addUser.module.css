@@ -1,0 +1,82 @@
+.container {
+    background-color: var(--bgSoft);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form input, 
+.form textarea, 
+.form select {
+    padding: 10px; /* Adjusted padding for better readability */
+    background-color: var(--bgSoft); /* Change background color */
+    color: var(--text);
+    border: 2px solid #2e374a;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+}
+
+.form input,
+.form select {
+    width: 48%; /* Adjusted width for better layout */
+}
+
+.form select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%232e374a' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 8px 10px;
+    padding-right: 30px; /* Extra padding to account for the arrow */
+}
+
+.form textarea {
+    width: 100%; /* Full width for the textarea */
+    min-height: 100px; /* Minimum height for better usability */
+}
+
+.form button {
+    width: 100%; /* Full width for the button */
+    padding: 15px; /* Adjusted padding for better readability */
+    background-color: teal;
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Added font size for better readability */
+}
+
+/* Additional styles for better readability */
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+    color: var(--text);
+}
+
+.container p {
+    color: var(--text);
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text);
+    font-weight: bold;
+}
+
+.form input::placeholder,
+.form textarea::placeholder,
+.form select::placeholder {
+    color: #aaa; /* Placeholder color for better visibility */
+}
