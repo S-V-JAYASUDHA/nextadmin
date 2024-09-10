@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Bookslide from '@/components/bookslide';
 import styles from './page.module.css';  // Assuming the CSS file is in the same directory
 
 export default function Home() {
@@ -27,41 +28,38 @@ export default function Home() {
         />
       </section>
 
-      
-
       {/* Genres Section */}
       <section className={styles.genresSection}>
         <h2 className={styles.sectionTitle}>Explore by Genre</h2>
         <div className={styles.genresGrid}>
           <div className={styles.genreCard}>
             <h3 className={styles.genreTitle}>Fiction</h3>
-            <Link href="/genre/fiction" className={styles.link}>See All</Link>
+            <Link href="/genre/fiction" className={styles.seeAllLink}>See All</Link>
           </div>
           <div className={styles.genreCard}>
             <h3 className={styles.genreTitle}>Non-Fiction</h3>
-            <Link href="/genre/non-fiction" className={styles.link}>See All</Link>
+            <Link href="/genre/non-fiction" className={styles.seeAllLink}>See All</Link>
           </div>
           <div className={styles.genreCard}>
             <h3 className={styles.genreTitle}>Mystery</h3>
-            <Link href="/genre/mystery" className={styles.link}>See All</Link>
+            <Link href="/genre/mystery" className={styles.seeAllLink}>See All</Link>
           </div>
           <div className={styles.genreCard}>
             <h3 className={styles.genreTitle}>Science Fiction</h3>
-            <Link href="/genre/science-fiction" className={styles.link}>See All</Link>
+            <Link href="/genre/science-fiction" className={styles.seeAllLink}>See All</Link>
           </div>
           <div className={styles.genreCard}>
             <h3 className={styles.genreTitle}>Biography</h3>
-            <Link href="/genre/biography" className={styles.link}>See All</Link>
+            <Link href="/genre/biography" className={styles.seeAllLink}>See All</Link>
           </div>
         </div>
       </section>
-
-      
 
       {/* Featured Books Section */}
       <section className={styles.featuredBooksSection}>
         <h2 className={styles.sectionTitle}>Featured Books</h2>
         <div className={styles.grid}>
+
           <div className={styles.card}>
             <Image
               src="/book1.jpg"
@@ -70,7 +68,7 @@ export default function Home() {
               height={300}
               className={styles.image}
             />
-            <p className={styles.author}>Author:  Harper Lee</p>
+            <p className={styles.author}>Author: Harper Lee</p>
             <p className={styles.price}>Price: $15.99</p>
             <Link href="/book/1" className={styles.link}>View Details</Link>
           </div>
@@ -86,7 +84,11 @@ export default function Home() {
             <p className={styles.price}>Price: $12.99</p>
             <Link href="/book/2" className={styles.link}>View Details</Link>
           </div>
-          <div className={styles.card}>
+
+          <Bookslide url="./book3.jpg" bookname= "book3" author="Jane Austen" price="34.23" />
+
+
+          {/* <div className={styles.card}>
             <Image
               src="/book3.jpg"
               alt="Book 3"
@@ -97,7 +99,7 @@ export default function Home() {
             <p className={styles.author}>Author: Jane Austen</p>
             <p className={styles.price}>Price: $10.99</p>
             <Link href="/book/3" className={styles.link}>View Details</Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </main>

@@ -11,7 +11,7 @@ export default function VirtualBookshelf() {
         {/* Example book cards */}
         <div className={styles.bookCard}>
           <Image
-            src="/book-cover-1.jpg"
+            src="/book4.jpg"
             alt="Book 1"
             width={150}
             height={220}
