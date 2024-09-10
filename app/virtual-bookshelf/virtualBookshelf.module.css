@@ -1,40 +1,64 @@
+/* Style for the main container */
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    min-height: 100vh;
-    background-color: var(--bg);
-    color: var(--text);
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .bookshelfGrid {
-    display: flex;
-    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-  }
-  
-  .bookCard {
-    background-color: var(--bgSoft);
-    padding: 1rem;
-    border-radius: 0.375rem;
-    text-align: center;
-    width: 150px;
-  }
-  
-  .bookTitle {
-    margin-top: 0.5rem;
-    color: var(--text);
-  }
-  
-  .backLink {
-    margin-top: 2rem;
-    color: var(--textSoft);
-    text-decoration: none;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the title */
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center; /* Center the title */
+}
+
+/* Container for the bookshelf (books in a row) */
+.bookshelfGrid {
+  display: flex;
+  flex-direction: row; /* Arrange books in a row */
+  gap: 1.5rem; /* Add space between the books */
+  flex-wrap: wrap; /* Allow books to wrap to next line if necessary */
+  justify-content: center; /* Center the books in the row */
+}
+
+/* Style for each book card */
+.card {
+  background-color: var(--bgSoft);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(245, 244, 244, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: 1rem;
+}
+
+.image {
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.bookname {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.link {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--bg);
+  color: var(--textSoft);
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+
+.link:hover {
+  background-color: var(--bgSoft); /* Slight hover effect */
+}

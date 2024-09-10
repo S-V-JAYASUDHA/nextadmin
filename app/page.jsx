@@ -11,7 +11,7 @@ export default function Home() {
         <ul className={styles.navLinks}>
           <li><Link href="/">Home</Link></li>
           <li><Link href="/contact">Contact</Link></li>
-          <li><Link href="/virtual-bookshelf" className={styles.link}>Virtual Bookshelf</Link></li>
+          <li><Link href="/virtual-bookshelf" className={styles.link}>Bookshelf</Link></li>
         </ul>
         <div className={styles.searchBox}>
           <input type="text" placeholder="Search for books..." />
@@ -60,46 +60,12 @@ export default function Home() {
         <h2 className={styles.sectionTitle}>Featured Books</h2>
         <div className={styles.grid}>
 
-          <div className={styles.card}>
-            <Image
-              src="/book1.jpg"
-              alt="Book 1"
-              width={200}
-              height={300}
-              className={styles.image}
-            />
-            <p className={styles.author}>Author: Harper Lee</p>
-            <p className={styles.price}>Price: $15.99</p>
-            <Link href="/book/1" className={styles.link}>View Details</Link>
-          </div>
-          <div className={styles.card}>
-            <Image
-              src="/book2.jpg"
-              alt="Book 2"
-              width={200}
-              height={300}
-              className={styles.image}
-            />
-            <p className={styles.author}>Author: Orson Scott Card</p>
-            <p className={styles.price}>Price: $12.99</p>
-            <Link href="/book/2" className={styles.link}>View Details</Link>
-          </div>
+        <Bookslide src="/book1.jpg" bookname="book1" author="Harper Lee" price="15.99" />
 
-          <Bookslide url="./book3.jpg" bookname= "book3" author="Jane Austen" price="34.23" />
+        <Bookslide src="/book2.jpg" bookname="book2" author="Orson Scott Card" price="12.99" />
 
+        <Bookslide src="/book3.jpg" bookname="book3" author="Jane Austen" price="34.23" />
 
-          {/* <div className={styles.card}>
-            <Image
-              src="/book3.jpg"
-              alt="Book 3"
-              width={200}
-              height={300}
-              className={styles.image}
-            />
-            <p className={styles.author}>Author: Jane Austen</p>
-            <p className={styles.price}>Price: $10.99</p>
-            <Link href="/book/3" className={styles.link}>View Details</Link>
-          </div> */}
         </div>
       </section>
     </main>
