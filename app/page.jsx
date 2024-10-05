@@ -10,9 +10,13 @@ export default function Home() {
       <nav className={styles.navbar}>
         <ul className={styles.navLinks}>
           <li><Link href="/">Home</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
           <li><Link href="/virtual-bookshelf" className={styles.link}>Bookshelf</Link></li>
+          <li><Link href="/about" className={styles.aboutLink}>About Us</Link></li>
+          <li><Link href="/contact">Contact</Link></li>
+          <li><Link href="/signin" className={styles.link}>Sign In</Link></li>
+          <li><Link href="/signup" className={styles.link}>Sign Up</Link></li>
         </ul>
+        
         <div className={styles.searchBox}>
           <input type="text" placeholder="Search for books..." />
         </div>
@@ -20,12 +24,44 @@ export default function Home() {
 
       {/* Banner Section */}
       <section className={styles.banner}>
-        <Image
-          src="/banner-image.jpg"
-          alt="Book Store Banner"
-          layout="fill"
-          className={styles.bannerImage}
-        />
+        <div className={styles.bannerContainer}>
+          <div className={styles.bannerSlide}>
+            <Image
+              src="/banner1.jpg"
+              alt="Banner Image 1"
+              layout="fill"
+              className={styles.bannerImage}
+            />
+            
+          </div>
+          <div className={styles.bannerSlide}>
+            <Image
+              src="/banner2.jpg"
+              alt="Banner Image 2"
+              layout="fill"
+              className={styles.bannerImage}
+            />
+          </div>
+          <div className={styles.bannerSlide}>
+            <Image
+              src="/banner3.jpg"
+              alt="Banner Image 3"
+              layout="fill"
+              className={styles.bannerImage}
+            />
+          </div>
+          <div className={styles.bannerSlide}>
+            <Image
+              src="/banner4.jpg"
+              alt="Banner Image 4"
+              layout="fill"
+              className={styles.bannerImage}
+            />
+          </div>
+        </div>
+        <div className={styles.bannerControls}>
+          {/* Optionally add control buttons here */}
+        </div>
       </section>
 
       {/* Genres Section */}
@@ -59,13 +95,9 @@ export default function Home() {
       <section className={styles.featuredBooksSection}>
         <h2 className={styles.sectionTitle}>Featured Books</h2>
         <div className={styles.grid}>
-
-        <Bookslide src="/book1.jpg" bookname="book1" author="Harper Lee" price="15.99" />
-
-        <Bookslide src="/book2.jpg" bookname="book2" author="Orson Scott Card" price="12.99" />
-
-        <Bookslide src="/book3.jpg" bookname="book3" author="Jane Austen" price="34.23" />
-
+          <Bookslide src="/book1.jpg" bookname="Book Title 1" author="Harper Lee" price="15.99" />
+          <Bookslide src="/book2.jpg" bookname="Book Title 2" author="Orson Scott Card" price="12.99" />
+          <Bookslide src="/book3.jpg" bookname="Book Title 3" author="Jane Austen" price="34.23" />
         </div>
       </section>
     </main>

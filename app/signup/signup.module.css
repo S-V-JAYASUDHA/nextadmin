@@ -1,0 +1,81 @@
+/* signup.module.css */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://getwallpapers.com/wallpaper/full/5/a/7/165895.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.signUpSection {
+  background: transparent;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 3px 5px 8px rgba(225, 127, 94, 0.852);
+  width: 100%;
+  max-width: 400px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.signUpButton {
+  background-color:  rgb(243, 151, 121);
+  color: #100808;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.signUpButton:hover {
+  background-color: lightblue;
+}
+
+.signInPrompt {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.link {
+  color: rgb(243, 151, 121);
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: lightblue;
+}
+

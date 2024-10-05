@@ -1,3 +1,4 @@
+import Link from 'next/link'; // Import Link for navigation
 import styles from './contact.module.css'; // Import the CSS specific to the contact page
 
 export default function Contact() {
@@ -23,6 +24,13 @@ export default function Contact() {
 
         <button type="submit" className={styles.submitButton}>Submit</button>
       </form>
+
+      {/* Back to Home Button */}
+      <div className={styles.backButtonContainer}>
+        <Link href="/" className={styles.backButton}>
+          Back to Home
+        </Link>
+      </div>
     </main>
   );
 }
