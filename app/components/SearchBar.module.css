@@ -1,0 +1,118 @@
+.searchContainer {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .searchForm {
+    display: flex;
+    align-items: center;
+    background-color: var(--bgCard);
+    border-radius: 8px;
+    box-shadow: 
+      1px 3px 5px rgba(0, 0, 0, 0.1),
+      0 4px 6px rgba(253, 252, 252, 0.999);
+    overflow: hidden;
+    
+  }
+  
+  .searchInput {
+    flex-grow: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    background-color: transparent;
+    color: var(--text);
+    font-size: 1rem;
+  }
+  
+  .searchInput:focus {
+    outline: none;
+  }
+  
+  .searchButton {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 
+      background-color 0.3s ease,
+      transform 0.2s ease;
+    min-width: 100px; /* Set a minimum width */
+    height: 100%; /* Match input height */
+    border-radius: 0 8px 8px 0; 
+  }
+  
+  .searchButton:hover {
+    background-color: var(--primaryDark);
+    transform: scale(1.05);
+  }
+  
+  .searchResultsPreview {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bgCard);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 
+      0 4px 6px rgba(0, 0, 0, 0.1),
+      0 4px 6px rgba(253, 252, 252, 0.999);
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 10;
+    margin-top: 5px;
+    min-width: 1000px;
+  }
+  
+  .searchResultsPreview h4 {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    margin: 0;
+    background-color: var(--bgSoft);
+    color: var(--text);
+  }
+  
+  .searchResultItem {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    transition: background-color 0.3s ease;
+  }
+  
+  .searchResultItem:hover {
+    background-color: var(--bgSoft);
+  }
+  
+  .resultImage {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    margin-right: 1rem;
+    border-radius: 4px;
+  }
+  
+  .resultDetails {
+    flex-grow: 1;
+  }
+  
+  .resultDetails h5 {
+    margin: 0 0 0.5rem 0;
+    color: var(--text);
+  }
+  
+  .resultDetails p {
+    margin: 0 0 0.5rem 0;
+    color: var(--textSoft);
+    font-size: 0.9rem;
+  }
+  
+  .resultDetails span {
+    font-weight: bold;
+    color: var(--primary);
+  }

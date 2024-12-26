@@ -1,0 +1,137 @@
+.searchResultsPage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--bgSoft);
+  }
+  
+  .searchHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .searchHeader h1 {
+    color: var(--text);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .searchHeader p {
+    color: var(--textSoft);
+    font-size: 1.1rem;
+  }
+  
+  .resultsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .bookCard {
+    background-color: var(--bgCard);
+    border-radius: 10px;
+    box-shadow: 
+      1px 3px 5px rgba(0, 0, 0, 0.1),
+      0 4px 6px rgba(253, 252, 252, 0.999);
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .bookCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+      2px 4px 6px rgba(0, 0, 0, 0.15),
+      0 6px 8px rgba(253, 252, 252, 0.999);
+  }
+  
+  .bookImageContainer {
+    position: relative;
+    width: 250px;
+    height: 350px;
+  }
+  
+  .bookDetails {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .bookDetails h2 {
+    color: var(--text);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .author {
+    color: var(--textSoft);
+    margin-bottom: 0.5rem;
+  }
+  
+  .genre {
+    background-color: var(--bgSoft);
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    color: var(--textSoft);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .bookActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 1.2rem;
+  }
+  
+  .detailsLink {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .detailsLink:hover {
+    background-color: var(--primaryDark);
+  }
+  
+  .noResults {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--bgCard);
+    border-radius: 10px;
+  }
+  
+  .noResults p {
+    color: var(--textSoft);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .browseAllLink {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .browseAllLink:hover {
+    background-color: var(--primaryDark);
+  }
